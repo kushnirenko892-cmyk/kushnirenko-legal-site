@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --background: #120a06;
+  --foreground: #f4e8da;
+  --chocolate-black: #120a06;
+  --chocolate-deep: #1a0f0a;
+  --chocolate-cocoa: #24140d;
+  --warm-brown: #332017;
+  --bitter-chocolate: #0d0705;
+  --cream: #f4e8da;
+  --cream-muted: #d9c6b2;
+  --sand: #bca087;
+  --bronze: #c79a6b;
+  --caramel: #b9855b;
+  --antique-gold: #a97945;
+  --line-soft: rgba(244, 232, 218, 0.16);
+  --line-strong: rgba(244, 232, 218, 0.32);
+  background: var(--background);
+  color: var(--foreground);
+}
+
+* {
+  box-sizing: border-box;
+  min-width: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+li,
+dd,
+dt,
+summary,
+a,
+span {
+  overflow-wrap: break-word;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: clip;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  overflow-x: clip;
+  font-family: var(--font-manrope), sans-serif;
+  background:
+    linear-gradient(90deg, rgba(244, 232, 218, 0.035) 1px, transparent 1px),
+    linear-gradient(180deg, #120a06 0%, #1a0f0a 54%, #120a06 100%);
+  background-size: 80px 100%, auto;
+}
+
+::selection {
+  background: var(--bronze);
+  color: var(--chocolate-black);
+}
+
+.font-display {
+  font-family: var(--font-cormorant), serif;
+}
+
+.font-luxury {
+  font-family: var(--font-bodoni), var(--font-cormorant), serif;
+}
+
+.premium-noise {
+  position: relative;
+}
+
+.premium-noise::before {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  opacity: 0.16;
+  background-image: linear-gradient(rgba(244, 232, 218, 0.08) 1px, transparent 1px);
+  background-size: 100% 14px;
+}
+
+.editorial-grid {
+  background-image:
+    linear-gradient(90deg, rgba(244, 232, 218, 0.08) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(244, 232, 218, 0.06) 1px, transparent 1px);
+  background-size: 25% 100%, 100% 96px;
+}
+
+.light-grid {
+  background-image:
+    linear-gradient(90deg, rgba(244, 232, 218, 0.05) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(244, 232, 218, 0.04) 1px, transparent 1px);
+  background-size: 25% 100%, 100% 96px;
+}
