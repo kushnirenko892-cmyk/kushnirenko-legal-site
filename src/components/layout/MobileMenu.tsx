@@ -18,7 +18,7 @@ export function MobileMenu() {
       </div>
       <SheetContent>
         <div className="flex items-center justify-between border-b border-[color:var(--line-soft)] pb-5">
-          <span className="font-luxury text-2xl text-bronze">EK</span>
+          <span className="font-luxury text-2xl text-bronze">ЕК</span>
           <SheetClose asChild>
             <ShadcnButton type="button" aria-label="Закрыть меню" size="icon" variant="ghost">
               <X className="h-5 w-5" />

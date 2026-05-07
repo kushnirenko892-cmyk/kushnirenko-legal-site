@@ -11,8 +11,8 @@ export function Directions() {
           <SectionTitle
             eyebrow="Направления"
             number="1.1"
-            title="Юридическая работа как система, а не набор разрозненных документов"
-            text="Можно начать с одного направления или собрать маршрут, где право связано с запуском, продуктом, сайтом и Telegram-связкой."
+            title="Направления"
+            text="Основные области, в которых вы можете обратиться за юридической консультацией и сопровождением."
             light
           />
         <div className="mt-12 border-y border-[color:var(--line-soft)]">
@@ -28,13 +28,11 @@ export function Directions() {
                   <h3 className="font-display text-4xl leading-tight text-foreground sm:text-5xl">{item.title}</h3>
                   <p className="mt-3 max-w-2xl text-sm leading-6 text-foreground/62">{item.text}</p>
                 </div>
-                <Button className="md:min-w-56" variant="secondary">
-                  {item.cta}
-                </Button>
               </article>
             );
           })}
         </div>
+        <Button className="mt-8" variant="secondary" />
       </Container>
     </MotionSection>
   );

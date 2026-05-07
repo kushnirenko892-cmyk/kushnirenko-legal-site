@@ -1,10 +1,10 @@
 import { cn } from "@/lib/utils";
 
 export function MonogramMark({
-  label = "EK",
+  label = "ЕК",
   className
 }: {
-  label?: "EK" | "KUSH";
+  label?: string;
   className?: string;
 }) {
   return (

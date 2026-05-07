@@ -24,13 +24,10 @@ export default function Home() {
         <BusinessSection />
         <LicensingSection />
         <TradesSection />
-        <KushSection />
-        <ProcessSection />
         <CasesSection />
         <AboutSection />
         <ReviewsSection />
         <FAQSection />
-        <FinalCTA />
       </main>
       <FloatingTelegramCTA />
       <Footer />

@@ -1,9 +1,9 @@
 export const navigationItems = [
   { label: "Направления", href: "#directions" },
-  { label: "Кейсы", href: "#cases" },
+  { label: "Практика", href: "#cases" },
   { label: "Отзывы", href: "#reviews" },
-  { label: "О Елизавете", href: "#about" },
-  { label: "FAQ", href: "#faq" }
+  { label: "Обо мне", href: "#about" },
+  { label: "Вопросы", href: "#faq" }
 ] as const;
 
 export const telegramUrl =
