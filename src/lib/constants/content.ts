@@ -1,4 +1,9 @@
-import { BriefcaseBusiness, GraduationCap, Handshake, Sparkles } from "lucide-react";
+import { BriefcaseBusiness, GraduationCap, Handshake } from "lucide-react";
+import aboutPhoto1 from "../../../img/IMG1.jpg";
+import aboutPhoto2 from "../../../img/IMG2.jpg";
+import aboutPhoto3 from "../../../img/IMG3.jpg";
+import aboutPhoto4 from "../../../img/IMG4.jpg";
+import aboutPhoto5 from "../../../img/IMG5.jpg";
 
 export const mainCta = "Записаться на консультацию";
 
@@ -7,24 +12,21 @@ export const directions = [
   {
     id: "business",
     title: "Сопровождение для бизнеса",
-  
-  
+    text: "Юридическая поддержка предпринимателей и компаний в ежедневных и стратегических задачах.",
     icon: BriefcaseBusiness
   },
   {
     id: "licensing",
     title: "Сопровождение для онлайн-школ",
-
+    text: "Подготовка документов и правовой базы для запуска и работы образовательных проектов.",
     icon: GraduationCap
   },
   {
     id: "trades",
     title: "Сопровождение торгов",
-   
-    cta: "Проверить лот",
+    text: "Проверка объектов, подготовка документов и сопровождение участия в торгах и тендерах.",
     icon: Handshake
   },
-
 ] as const;
 
 export const businessItems = [
@@ -35,6 +37,25 @@ export const businessItems = [
   "составление пакета документов для сайта организации",
   "сопровождение в процессе разблокировки счетов по 115,161ФЗ",
 
+] as const;
+
+export const processSteps = [
+  {
+    title: "Диагностика",
+    text: "Определяем текущую ситуацию, риски и состав задач, которые нужно закрыть в первую очередь."
+  },
+  {
+    title: "Стратегия",
+    text: "Формируем понятный маршрут работы: что делаем сейчас, а что выносим в следующий этап."
+  },
+  {
+    title: "Документы",
+    text: "Готовим и собираем комплект документов под конкретную задачу, запуск или сопровождение."
+  },
+  {
+    title: "Сопровождение",
+    text: "Остаемся рядом на этапе внедрения и помогаем довести юридическую часть до рабочего результата."
+  }
 ] as const;
 
 
@@ -63,16 +84,24 @@ export const tradeItems = [
 
 export const aboutPhotos = [
   {
-    src: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=900&q=80",
-    alt: "Профессиональная встреча за рабочим столом"
+    src: aboutPhoto1,
+    alt: "Елизавета Кушниренко"
   },
   {
-    src: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=900&q=80",
-    alt: "Юрист на деловой встрече"
+    src: aboutPhoto2,
+    alt: "Елизавета Кушниренко в рабочей обстановке"
   },
   {
-    src: "https://images.unsplash.com/photo-1521790797524-b2497295b8a0?auto=format&fit=crop&w=900&q=80",
-    alt: "Рабочий процесс с документами"
+    src: aboutPhoto3,
+    alt: "Портрет Елизаветы Кушниренко"
+  },
+  {
+    src: aboutPhoto4,
+    alt: "Елизавета Кушниренко на профессиональной съемке"
+  },
+  {
+    src: aboutPhoto5,
+    alt: "Фото Елизаветы Кушниренко"
   }
 ] as const;
 
@@ -133,3 +162,26 @@ export const faq = [
     answer: "Архитектура уже предусматривает /cabinet, но в первом релизе это заглушка для будущего этапа."
   }
 ] as const;
+
+export const footerDocuments = [
+  { label: "Оферта", href: "/docs/offer" },
+  { label: "Пользовательское соглашение", href: "/docs/user-agreement" },
+  { label: "Политика обработки персональных данных", href: "/docs/privacy-policy" },
+  { label: "Согласие на обработку персональных данных", href: "/docs/personal-data-consent" },
+  { label: "Политика конфиденциальности", href: "/docs/confidentiality" },
+  { label: "Реквизиты / правовая информация", href: "/docs/requisites" }
+] as const;
+
+export const footerRequisites = [
+  { label: "ИНН", value: "будет добавлено" },
+  { label: "ОГРНИП", value: "будет добавлено" },
+  { label: "Email", value: "будет добавлено" }
+] as const;
+
+export const footerCompanyNote =
+  "ИП Кушниренко Елизавета [Отчество]. Реквизиты будут добавлены после финальной проверки документов.";
+
+export const footerDisclaimer =
+  "Материалы сайта носят информационный характер и не являются индивидуальной юридической консультацией до заключения соглашения с клиентом.";
+
+export const footerCopyright = "© 2026 Елизавета Кушниренко. Все права защищены.";

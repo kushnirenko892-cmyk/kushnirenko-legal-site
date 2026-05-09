@@ -5,13 +5,20 @@ import { navigationItems, telegramUrl } from "@/lib/constants/navigation";
 import { mainCta } from "@/lib/constants/content";
 import { Sheet, SheetClose, SheetContent, SheetTrigger } from "@/components/ui/shadcn/sheet";
 import { ShadcnButton } from "@/components/ui/shadcn/button";
+import { cn } from "@/lib/utils";
 
-export function MobileMenu() {
+export function MobileMenu({ inverted = false }: { inverted?: boolean }) {
   return (
     <Sheet>
       <div className="fixed right-24 top-4 z-50 shrink-0 lg:hidden">
         <SheetTrigger asChild>
-          <ShadcnButton type="button" aria-label="Открыть меню" size="icon" variant="luxury">
+          <ShadcnButton
+            type="button"
+            aria-label="Открыть меню"
+            size="icon"
+            variant="luxury"
+            className={cn(inverted ? "border-ink/20 text-ink hover:bg-ink hover:text-paper" : "")}
+          >
             <Menu className="h-5 w-5" />
           </ShadcnButton>
         </SheetTrigger>
