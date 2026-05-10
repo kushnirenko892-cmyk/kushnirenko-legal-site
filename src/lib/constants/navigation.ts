@@ -16,3 +16,9 @@ export const footerNavigation = [
 
 export const telegramUrl =
   process.env.NEXT_PUBLIC_TELEGRAM_BOT_URL || "#contacts";
+  
+export const instagramUrl =
+  process.env.NEXT_PUBLIC_INSTAGRAM_URL || "#contacts";
+
+  export const instagramReviewsUrl =
+  process.env.NEXT_PUBLIC_INSTAGRAM_REVIEWS_URL || "https://www.instagram.com/stories/highlights/18186953866333046/";

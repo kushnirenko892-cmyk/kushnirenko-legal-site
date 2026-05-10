@@ -6,7 +6,7 @@ import {
   footerDocuments,
   footerRequisites
 } from "@/lib/constants/content";
-import { footerNavigation, telegramUrl } from "@/lib/constants/navigation";
+import { footerNavigation, instagramUrl, telegramUrl } from "@/lib/constants/navigation";
 import { Container } from "@/components/ui/Container";
 
 type FooterProps = {
@@ -72,6 +72,15 @@ export function Footer({ withinInvertedZone = false }: FooterProps) {
                     Перейти
                   </Link>
                 </p>
+
+                <p className="whitespace-normal">
+                  <span className={foregroundClassName}>Instagram:</span>{" "}
+                  <Link href={instagramUrl} className="transition-colors duration-300 hover:text-bronze">
+                    Перейти
+                  </Link>
+                </p>
+
+
               </div>
             </div>
           </div>

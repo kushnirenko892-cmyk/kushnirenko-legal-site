@@ -27,7 +27,7 @@ export function FAQSection({ variant = "default" }: FAQSectionProps) {
         <SectionTitle
           eyebrow="FAQ"
           number="2.4"
-          title="Коротко о первом шаге и формате работы"
+          title="Часто задаваемые вопросы"
           light={!isInverted && !isScrollInverted}
           titleClassName={isScrollInverted ? "text-[color:var(--footer-zone-fg)]" : undefined}
           eyebrowNumberClassName={isScrollInverted ? "text-[color:var(--footer-zone-muted)]" : undefined}
