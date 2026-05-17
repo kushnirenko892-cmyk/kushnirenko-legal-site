@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/img/facto.png",
+        url: "/img/fact.png",
         width: 1200,
         height: 700,
         alt: "Елизавета Кушниренко — юридическая упаковка бизнеса, лицензии и торги"

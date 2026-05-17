@@ -11,7 +11,7 @@ export function AboutSection() {
   const [activePhoto, setActivePhoto] = useState(0);
   const safePhotos = aboutPhotos.length
     ? aboutPhotos
-    : [{ src: "/og-image.svg", alt: "Елизавета Кушниренко" }] as const;
+    : [{ src: "/img/about-1.jpg", alt: "Елизавета Кушниренко" }] as const;
 
   useEffect(() => {
     if (safePhotos.length <= 1 || window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
@@ -40,6 +40,7 @@ export function AboutSection() {
                     src={photo.src}
                     alt={photo.alt}
                     fill
+                    unoptimized
                     className="object-cover"
                     sizes="(min-width: 1024px) 40vw, 100vw"
                   />

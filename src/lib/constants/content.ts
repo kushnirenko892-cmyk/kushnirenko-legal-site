@@ -1,9 +1,4 @@
 import { BriefcaseBusiness, GraduationCap, Handshake } from "lucide-react";
-import aboutPhoto1 from "../../../img/IMG1.jpg";
-import aboutPhoto2 from "../../../img/IMG2.jpg";
-import aboutPhoto3 from "../../../img/IMG3.jpg";
-import aboutPhoto4 from "../../../img/IMG4.jpg";
-import aboutPhoto5 from "../../../img/IMG5.jpg";
 
 export const mainCta = "Записаться на консультацию";
 
@@ -85,23 +80,23 @@ export const tradeItems = [
 
 export const aboutPhotos = [
   {
-    src: aboutPhoto1,
+    src: "/img/about-1.jpg",
     alt: "Елизавета Кушниренко"
   },
   {
-    src: aboutPhoto2,
+    src: "/img/about-2.jpg",
     alt: "Елизавета Кушниренко в рабочей обстановке"
   },
   {
-    src: aboutPhoto3,
+    src: "/img/about-3.jpg",
     alt: "Портрет Елизаветы Кушниренко"
   },
   {
-    src: aboutPhoto4,
+    src: "/img/about-4.jpg",
     alt: "Елизавета Кушниренко на профессиональной съемке"
   },
   {
-    src: aboutPhoto5,
+    src: "/img/about-5.jpg",
     alt: "Фото Елизаветы Кушниренко"
   }
 ] as const;
