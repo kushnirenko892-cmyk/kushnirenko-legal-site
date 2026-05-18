@@ -3,7 +3,6 @@ import {
   footerCompanyNote,
   footerCopyright,
   footerDisclaimer,
-  footerDocuments,
   footerRequisites
 } from "@/lib/constants/content";
 import { footerNavigation, instagramUrl, telegramUrl } from "@/lib/constants/navigation";
@@ -30,21 +29,10 @@ export function Footer({ withinInvertedZone = false }: FooterProps) {
       ) : null}
       <div className={`${foregroundClassName} ${withinInvertedZone ? `border-t ${lineClassName} bg-transparent` : "border-t border-ink/10 bg-paper"}`}>
         <Container className="py-14 sm:py-20 lg:py-24">
-          <div className={`grid gap-10 border-b ${lineClassName} pb-10 lg:grid-cols-[1.1fr_0.9fr_0.9fr_0.9fr] lg:gap-12`}>
+          <div className={`grid gap-10 border-b ${lineClassName} pb-10 md:grid-cols-[1.1fr_0.9fr] lg:grid-cols-[1.15fr_0.85fr_1fr] lg:gap-12`}>
             <div className="max-w-md">
               <p className={`font-display text-4xl leading-none ${foregroundClassName} sm:text-5xl`}>Елизавета Кушниренко</p>
               <p className={`mt-5 text-sm leading-7 ${mutedClassName} sm:text-base`}>{footerCompanyNote}</p>
-            </div>
-
-            <div>
-              <h2 className="text-xs font-semibold uppercase tracking-[0.18em] text-bronze">Документы</h2>
-              <nav className="mt-5 grid gap-3">
-                {footerDocuments.map((item) => (
-                  <Link key={item.href} href={item.href} className={footerLinkClassName}>
-                    {item.label}
-                  </Link>
-                ))}
-              </nav>
             </div>
 
             <div>
@@ -58,7 +46,7 @@ export function Footer({ withinInvertedZone = false }: FooterProps) {
               </nav>
             </div>
 
-            <div>
+            <div className="md:col-span-2 lg:col-span-1">
               <h2 className="text-xs font-semibold uppercase tracking-[0.18em] text-bronze">Реквизиты</h2>
               <div className={`mt-5 grid gap-3 text-sm leading-6 ${mutedClassName}`}>
                 {footerRequisites.map((item) => (

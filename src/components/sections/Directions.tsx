@@ -11,8 +11,8 @@ export function Directions() {
           <SectionTitle
             eyebrow="Направления"
             number="1.1"
-            title="Направления"
-            text="Основные области, в которых вы можете обратиться за юридической консультацией и сопровождением."
+            title="Направления работы"
+            text="Основные направления моей юридической практики"
             light
           />
         <div className="mt-12 border-y border-[color:var(--line-soft)]">
