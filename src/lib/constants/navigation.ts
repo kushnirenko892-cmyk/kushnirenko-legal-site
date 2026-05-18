@@ -15,7 +15,7 @@ export const footerNavigation = [
 ] as const;
 
 export const telegramUrl =
-  process.env.NEXT_PUBLIC_TELEGRAM_BOT_URL || "#contacts";
+  "https://t.me/LawLiza_bot";
   
 export const instagramUrl =
   process.env.NEXT_PUBLIC_INSTAGRAM_URL || "#contacts";

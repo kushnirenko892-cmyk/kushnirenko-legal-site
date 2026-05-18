@@ -74,12 +74,14 @@ export function Footer({ withinInvertedZone = false }: FooterProps) {
                 </p>
 
                 <p className="whitespace-normal">
-                  <span className={foregroundClassName}>Instagram:</span>{" "}
+                  <span className={foregroundClassName}>Instagram*:</span>{" "}
                   <Link href={instagramUrl} className="transition-colors duration-300 hover:text-bronze">
                     Перейти
                   </Link>
                 </p>
-
+                <p className={`text-xs leading-5 ${softMutedClassName}`}>
+                  * организация Meta, запрещена на территории РФ
+                </p>
 
               </div>
             </div>
