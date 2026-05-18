@@ -17,7 +17,7 @@ export const footerNavigation = [
 export const telegramUrl =
   "https://t.me/LawLiza_bot";
   
-export const instagramUrl =
+export const instagramUrl = "https://www.instagram.com/eslawspb?igsh=MWttMGEyN2ZzY2RydA%3D%3D"
   process.env.NEXT_PUBLIC_INSTAGRAM_URL || "#contacts";
 
   export const instagramReviewsUrl =
